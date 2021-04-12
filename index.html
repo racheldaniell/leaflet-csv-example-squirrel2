@@ -66,10 +66,17 @@
     // For each row, columns `Latitude`, `Longitude`, and `Title` are required
     for (var i in data) {
       var row = data[i];
+      var imagePopup = row.filepath
+
+      var popupContent = "<p>"+"This squirrel right here was: "+row.Age+" and "+row.Title+"<p> <img src='"+imagePopup+"' width='300px'> </p>"+"</p>" ;
 
       var marker = L.marker([row.Latitude, row.Longitude], {
-        opacity: 1
-      }).bindPopup(row.Title+" - concatit");
+        opacity: 1, 
+          // Custom icon
+          icon: L.icon({
+          iconUrl:  'icons/sq_holding_nut_200px.png',
+          iconSize: [40, 60] })
+      }).bindPopup(popupContent);
       
       marker.addTo(map);
     }
