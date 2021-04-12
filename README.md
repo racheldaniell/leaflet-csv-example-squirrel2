@@ -5,7 +5,7 @@ This example project is built with the excellent template files by Hands On Data
 A simple Leaflet map with point markers from a CSV file, using data from NYC Open Data.
 
 ## this config
-https://racheldaniell.github.io//leaflet-csv-example-minimal-squirrel/
+https://racheldaniell.github.io/leaflet-csv-example-squirrely
 
 Sample data of 100 squirrels from NYC Open Data: Squirrel Census.
 
